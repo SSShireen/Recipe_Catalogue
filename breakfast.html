@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="recipe-style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breakfast Recipes</title>
+</head>
+<body>
+  <div id="container">
+    <h1>Breakfast Recipes</h1>
+
+    <!-- Recipe List: each box links to a recipe page -->
+    <div class="container">
+      <!-- Two recipe boxes at the top -->
+      <div class="box">
+        <a href="breakfast1.html">
+          <img src="pancakes.jpg" alt="Pancakes">
+          <h2>Pancakes</h2>
+        </a>
+      </div>
+      <div class="box">
+        <a href="breakfast2.html">
+          <img src="Overnight_Oats.jpg" alt="Overnight Oats">
+          <h2>Overnight Oats</h2>
+        </a>
+      </div>
+
+      <!-- Two recipe boxes at the bottom -->
+      <div class="box">
+        <a href="breakfast3.html">
+          <img src="Baked_Pancake_Bowls.jpg" alt="Baked Pancake Bowls">
+          <h2>Baked Pancake Bowls</h2>
+        </a>
+      </div>
+      <div class="box">
+        <a href="breakfast4.html">
+          <img src="French_Toast.jpg" alt="French Toast">
+          <h2>French Toast</h2>
+        </a>
+      </div>
+    </div>
+
+    <!-- Recipe Input Form -->
+    <div id="add-recipe">
+      <h2>Add a New Recipe</h2>
+      <form>
+        <label for="recipe-name">Recipe Name:</label>
+        <input type="text" id="recipe_name" placeholder="Enter recipe name"><br>
+
+        <label for="recipe-ingredients">Ingredients:</label>
+        <textarea id="recipe_ingredients" placeholder="Enter ingredients"></textarea><br>
+
+        <label for="recipe-method">Method:</label>
+        <textarea id="recipe_method" placeholder="Enter cooking method"></textarea><br>
+
+        <button type="submit" id="submit">Add Recipe</button>
+      </form>
+    </div>
+
+    <!-- Back Button -->
+    <button onclick="window.location.href='index.html'">Back</button>
+  </div>
+
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyANcsYsMMyA9eQIpPuUs-MUybfrNHAkH5A",
+    authDomain: "recipe-catalogue-eab65.firebaseapp.com",
+    projectId: "recipe-catalogue-eab65",
+    storageBucket: "recipe-catalogue-eab65.firebasestorage.app",
+    messagingSenderId: "526165619891",
+    appId: "1:526165619891:web:b3a4482b72e1e5468bacc6",
+    measurementId: "G-MBQ1940H3N"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
+</body>
+</html>
+

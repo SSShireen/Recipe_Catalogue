@@ -1,0 +1,23 @@
+{
+    "lang": "en-us",
+    "name": "Recipe Catalog App",
+    "short_name": "Recipe Catalog",
+    "description": "A PWA for exploring and adding delicious breakfast, lunch, dinner, and dessert recipes.",
+    "start_url": "/",
+    "background_color": "#F8EDE3",
+    "theme_color": "#C5705D",
+    "orientation": "portrait",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/icon512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}

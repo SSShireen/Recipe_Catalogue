@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="recipe-style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dessert Recipes</title>
+</head>
+<body>
+  <div id="container">
+    <h1>Dessert Recipes</h1>
+
+    <!-- Recipe List: each box links to a recipe page -->
+    <div class="container">
+      <!-- Two recipe boxes at the top -->
+      <div class="box">
+        <a href="dessert1.html">
+          <img src="Oreo_Truffle_Cups.jpg" alt="Oreo Truffle Cups">
+          <h2>Oreo Truffle Cups</h2>
+        </a>
+      </div>
+      <div class="box">
+        <a href="dessert2.html">
+          <img src="Chocolate_Mousse.jpg" alt="Chocolate Mousse">
+          <h2>Chocolate Mousse</h2>
+        </a>
+      </div>
+
+      <!-- Two recipe boxes at the bottom -->
+      <div class="box">
+        <a href="dessert3.html">
+          <img src="Blondies.jpg" alt="Blondies">
+          <h2>Blondies</h2>
+        </a>
+      </div>
+      <div class="box">
+        <a href="dessert4.html">
+          <img src="Churros.jpg" alt="Churros">
+          <h2>Churros</h2>
+        </a>
+      </div>
+    </div>
+
+    <!-- Recipe Input Form -->
+    <div id="add-recipe">
+      <h2>Add a New Recipe</h2>
+      <form>
+        <label for="recipe-name">Recipe Name:</label>
+        <input type="text" id="recipe-name" placeholder="Enter recipe name"><br>
+
+        <label for="recipe-ingredients">Ingredients:</label>
+        <textarea id="recipe-ingredients" placeholder="Enter ingredients"></textarea><br>
+
+        <label for="recipe-method">Method:</label>
+        <textarea id="recipe-method" placeholder="Enter cooking method"></textarea><br>
+
+        <button type="submit">Add Recipe</button>
+      </form>
+    </div>
+
+    <!-- Back Button -->
+    <button onclick="window.location.href='index.html'">Back</button>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,134 @@
+/* General styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: white; /* Set the background color of the whole page to white */
+  min-height: 100vh; /* Make sure the body takes up the full height of the screen */
+}
+
+#container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: white; /* Set the background of the container to white */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  min-height: 100vh; /* Ensure the container stretches to the bottom of the screen */
+}
+
+/* Header styles */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+/* Recipe categories (Index Page) */
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.box {
+  text-align: center;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.box img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 2px solid #ddd;
+}
+
+.box:hover {
+  background: #C5705D; /* Hover color for the box */
+  transform: translateY(-5px);
+}
+
+.box h2 {
+  font-size: 1.2rem;
+  padding: 10px;
+  color: black; /* Text color for recipe names */
+}
+
+/* Recipe list styles (Breakfast Page) */
+#recipes-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.recipe-box {
+  flex: 1 1 calc(50% - 20px);
+  padding: 10px;
+  text-align: center;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.recipe-box:hover {
+  background: #C5705D;
+  transform: translateY(-3px);
+}
+
+.recipe-box a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Form styles */
+#add-recipe form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#add-recipe input, #add-recipe textarea {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#add-recipe button {
+  padding: 10px;
+  background-color: #C5705D; /* Add Recipe Button color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#add-recipe button:hover {
+  background-color: #C5705D; /* Hover effect for Add Recipe button */
+}
+
+/* Back Button */
+button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #C5705D; /* Back Button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #C5705D; /* Hover effect for Back button */
+}
+
